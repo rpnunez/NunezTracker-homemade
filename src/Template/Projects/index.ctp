@@ -19,7 +19,7 @@
                 </td>
                 <td>
                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-info">View</button>
+                        <a href="/projects/view/<?php echo $project->id; ?>"><button type="button" class="btn btn-info">View</button></a>
                         <button type="button" class="btn btn-warning">Remind</button>
 
                         <div class="btn-group" role="group">

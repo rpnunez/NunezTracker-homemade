@@ -14,7 +14,7 @@ class ProjectsController extends AppController {
         $projectsTable = TableRegistry::get('Projects');
         $projects = $projectsTable->find('all')->contain(['Companies']);
 
-        $this->set('projects', $projects);
+        $this->set(compact('projects'));
     }
 
     public function view() {
